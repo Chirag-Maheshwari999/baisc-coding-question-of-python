@@ -1,0 +1,18 @@
+Write a Program to determine if the given number is Armstrong number or not. Print true if number is armstrong, otherwise print false.
+       This coding question we do with the help of using python language....
+       ## Read input as specified in the question.
+## Print output as specified in the question.
+def arm(n):
+    j=len(str(n))
+    sum=0
+    while(n>0):
+        r=n%10
+        sum=sum+(r**j)
+        n=n//10
+    return(sum)
+n=int(input())
+temp=n
+if(arm(n)==temp):
+    print('true')
+else:
+    print('false')
